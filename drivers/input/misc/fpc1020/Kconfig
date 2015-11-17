@@ -1,0 +1,37 @@
+
+menuconfig FINGERPRINT_FPC1020
+    bool "FINGERPRINT_FPC1020"
+    help
+        Say Y here, and a list of supported touchscreens will be displayed.
+
+if FINGERPRINT_FPC1020
+
+config FINGERPRINT_FPC1020_DRIVER
+	tristate "fpc1020 fingerprint driver"
+	depends on FINGERPRINT_FPC1020
+	default n
+	help
+	  This is the main file for fingerprint driver for fpc1020.
+	  Say Y here if you have a fpc1020 fingerprint connected
+	  to your system.
+endif
+
+choice
+	bool "fpc input method"
+	depends on FINGERPRINT_FPC1020_DRIVER
+	default CONFIG_INPUT_FPC1020_NAV
+	help
+	  This option controls which method will be used to
+	  report the keys event.
+
+config INPUT_FPC1020_COMMON
+	bool "common input method"
+	help
+	  Select to use common input method to report keys event.
+
+config INPUT_FPC1020_NAV
+	bool "navigation method"
+	help
+	  Select to use navigation method to report keys event.
+
+endchoice

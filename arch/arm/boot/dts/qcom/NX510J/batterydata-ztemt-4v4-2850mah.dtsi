@@ -1,0 +1,61 @@
+/* Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+//zte_nx508j_2850mah_averaged_masterslave_dec10th2014
+
+qcom,ztemt-batterydata  {
+	qcom,fcc-mah = <2850>;
+	qcom,default-rbatt-mohm = <128>;
+	qcom,max-voltage-uv = <4400000>;
+	qcom,rbatt-capacitive-mohm = <50>;
+	qcom,v-cutoff-uv = <3400000>;
+	qcom,chg-term-ua = <100000>;
+	qcom,batt-id-kohm = <15>;
+	qcom,checksum = <0xE9F4>;
+	qcom,battery-type = "ztemt_atl_2850mah";
+
+	qcom,fg-profile-data = [
+		 F1 83 71 7D 
+		 86 81 06 7C 
+		 52 83 56 58 
+		 6D 80 A9 87 
+		 69 82 56 93 
+		 C2 B4 28 C0 
+		 58 16 17 88 
+		 2B 7F B0 82 
+		 08 7D 4D 83 
+		 CC 70 47 5A 
+		 1B 7D 5A 82 
+		 52 99 90 BC 
+		 4C C9 60 0D 
+		 1E 0B A2 5A 
+		 CE 6E 71 FD 
+		 1B 3C C4 44 
+		 77 41 00 00 
+		 54 4C 5C 32 
+		 FE 3A 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 21 71 E2 6B 
+		 42 6A F5 8A 
+		 28 7C 4C 70 
+		 D9 6D CA 79 
+		 F6 75 71 68 
+		 D8 6C 6A A8 
+		 26 16 69 06 
+		 6C A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 00 
+	];
+};
+

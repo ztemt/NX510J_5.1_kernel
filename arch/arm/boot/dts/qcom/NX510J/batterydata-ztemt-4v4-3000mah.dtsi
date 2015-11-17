@@ -1,0 +1,61 @@
+/* Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+//zte_nx508j_3000mah_averaged_masterslave_dec10th2014
+
+qcom,ztemt-sumsung-3000mah-batterydata  {
+	qcom,fcc-mah = <3000>;
+	qcom,default-rbatt-mohm = <128>;
+	qcom,max-voltage-uv = <4400000>;
+	qcom,rbatt-capacitive-mohm = <50>;
+	qcom,v-cutoff-uv = <3400000>;
+	qcom,chg-term-ua = <100000>;
+	qcom,batt-id-kohm = <470>;
+	qcom,checksum = <0xE9F4>;
+	qcom,battery-type = "ztemt_sumsung_3000mah";
+
+	qcom,fg-profile-data = [
+		 F0 83 63 7D 
+		 7B 81 0D 7C 
+		 3E 83 5F 71 
+		 87 6E F6 6D 
+		 14 82 71 99 
+		 BA B7 56 C3 
+		 5E 17 06 88 
+		 FC 7D DE 81 
+		 59 7C 66 83 
+		 4F 6C 5E 88 
+		 B5 8F 58 82 
+		 E0 98 81 B7 
+		 BB C3 58 12 
+		 D7 0B 7E 5A 
+		 14 70 71 FD 
+		 A1 44 DB 47 
+		 AF 49 00 00 
+		 14 4C 35 3B 
+		 CF 30 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 1D 72 37 70 
+		 6A 6A 36 89 
+		 4A 7C C6 70 
+		 39 43 41 7A 
+		 37 76 F6 69 
+		 3B 6E AC A2 
+		 23 C2 60 02 
+		 5F A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 00 
+	];
+};
+
